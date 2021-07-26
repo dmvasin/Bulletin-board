@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import "normalize.css";
+body {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #0a143a;
+}
+
+buton {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  max-width: 1146px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.navbar {
+  display: flex;
+  /*Делаем гибкий блок*/
+  align-items: center;
+  /*Выравниваем по центру по вертикали*/
+  justify-content: space-between;
+  /*Разбрасываем элементы по краям*/
+  margin-bottom: 24px;
+}
+
+.navbar-menu {
+  margin-right: auto;
+  /*Автоматический отступ справа*/
+}
+
+.menu {
+  list-style: none;
+  /*Отключаем точки в списке*/
+  margin: 0;
+  padding-left: 22px;
+  padding-right: 22px;
+  display: flex;
+}
+.menu__item:not(:last-child) {
+  margin-right: 14px;
+}
+.menu__link {
+  color: inherit;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+}
+.button__link {
+  color: inherit;
+}
+.button__primary {
+  background: #256eeb;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.search-panel {
+  height: 50px;
+  background: #256eeb;
+  border-radius: 5px;
+  display: flex;
+  padding: 3px;
+}
+
+.search-input {
+  flex-grow: 1;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.search-button {
+  background: #256eeb;
+  border: none;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-right: 17px;
+  display: flex;
+  align-items: center;
+}
+.search-button__text {
+  margin-left: 5px;
+}
