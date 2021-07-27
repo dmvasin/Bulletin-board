@@ -14,10 +14,15 @@ a {
   text-decoration: none;
 }
 
-.header {
+.container {
   max-width: 1146px;
   margin: 0 auto;
+}
+
+.header {
   padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 12px;
 }
 
 .navbar {
@@ -29,8 +34,7 @@ a {
   /*Разбрасываем элементы по краям*/
   margin-bottom: 24px;
 }
-
-.navbar-menu {
+.navbar__menu {
   margin-right: auto;
   /*Автоматический отступ справа*/
 }
@@ -91,4 +95,109 @@ a {
 }
 .search-button__text {
   margin-left: 5px;
+}
+
+.page-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 9fr 3fr;
+  grid-template-columns: 9fr 3fr;
+  grid-column-gap: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+.card__title {
+  font-size: 16px;
+  line-height: 19px;
+  color: #256EEB;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+.card__image {
+  border-radius: 10px;
+  width: 264px;
+  height: 178px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 264px;
+}
+
+.like {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.card-price {
+  display: block;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #C4C4C4;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+.sidebar .page-title {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.service {
+  margin-bottom: 25px;
+}
+.service__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+.service__text {
+  font-size: 14px;
+  line-height: 16px;
+  min-width: 217px;
+}
+
+.footer__text {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #C4C4C4;
+  margin-bottom: 5px;
+}
+.footer__link {
+  color: inherit;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 16px;
 }
