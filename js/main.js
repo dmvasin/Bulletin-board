@@ -12,3 +12,8 @@ const swiper2 = new Swiper(".mySwiper2", {
           swiper: swiper,
         },
       });
+
+const menuBtn = document.querySelector(".menu-button");     
+menuBtn.addEventListener("click", () => {
+  alert("123")
+})
